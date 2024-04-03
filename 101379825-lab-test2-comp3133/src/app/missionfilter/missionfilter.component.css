@@ -1,0 +1,59 @@
+.filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .filter-section select, 
+  .filter-section button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .filter-section button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .year-filter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 5px;
+  }
+  
+  .year-filter button {
+    padding: 8px;
+    width: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .filter-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .year-filter {
+      display: block;
+    }
+  
+    .filter-section select, 
+    .filter-section button {
+      width: auto;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  
+    .filter-section:last-child button {
+      margin-right: 0;
+    }
+  }

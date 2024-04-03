@@ -1,0 +1,19 @@
+<div *ngIf="mission" class="mission-details-card">
+    <div class="mission-patch">
+      <img [src]="mission.mission_patch_small" alt="Mission Patch" />
+    </div>
+    <div class="mission-content">
+      <h2>{{ mission.mission_name }}</h2><br/>
+      <p><strong>Launch Year:</strong> {{ mission.launch_year }}</p>
+      <p><strong>Launch Success:</strong> {{ mission.launch_success ? 'Yes' : 'No' }}</p>
+      <p><strong>Details:</strong> {{ mission.details }}</p><br/>
+      <p><strong>Rocket Name:</strong> {{ mission.rocket.rocket_name }}</p>
+      <p><strong>Rocket Type:</strong> {{ mission.rocket.rocket_type }}</p><br/>
+      <div *ngIf="mission.rocket.first_stage.cores.length > 0">
+          <div *ngFor="let core of mission.rocket.first_stage.cores">
+            <p><strong>Serial:</strong> {{ core.core_serial }}</p>
+            <p><strong>Land Success:</strong> {{ core.land_success ? 'Yes' : 'No' }}
+          </div>
+      </div>
+    </div>
+  </div>

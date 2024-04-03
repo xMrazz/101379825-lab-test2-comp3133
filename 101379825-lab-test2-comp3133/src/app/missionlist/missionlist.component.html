@@ -1,0 +1,8 @@
+<div *ngFor="let mission of missions" class="mission-card" (click)="goToMissionDetails(mission.flight_number)">
+    <img [src]="mission.mission_patch_small" alt="Mission Patch">
+    <div>
+        <div class="mission-title">{{ mission.mission_name }}</div>
+        <div class="mission-year">Year: {{ mission.launch_year }}</div>
+        <div class="mission-details">{{ mission.details }}</div>
+    </div>
+</div>

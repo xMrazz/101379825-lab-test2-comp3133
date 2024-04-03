@@ -1,0 +1,41 @@
+.mission-details-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .mission-patch {
+    flex-shrink: 0;
+    width: 150px; 
+    margin-right: 20px;
+  }
+  
+  .mission-patch img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .mission-content {
+    flex: 1;
+  }
+  
+  .mission-content h2 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .mission-content p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .mission-content p strong {
+    color: #222;
+  }
